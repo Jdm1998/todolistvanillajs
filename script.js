@@ -19,10 +19,14 @@ let newtask = document.createTextNode( `${taskinput}`);
 let newtaskspan = document.createElement("span");
 let newtaskdiv =document.createElement("div");
 newtaskdiv.classList.add("task");
+let checkboxElement = document.createElement('input');
+checkboxElement.setAttribute("type","checkbox");
+
 let delelement = document.createElement('img');
 
 delelement.setAttribute("src","delete.png");
 newtaskspan.appendChild(newtask);
+newtaskdiv.appendChild(checkboxElement);
 newtaskdiv.appendChild(newtaskspan);
 newtaskdiv.appendChild(delelement);
 tasksElement.appendChild(newtaskdiv);
