@@ -14,15 +14,16 @@ body{
     width: 500px;
     height: 600px;
     background-color: azure;
-    border: 1px solid black;
+    border: 1px solid rgb(104, 81, 194);
     border-radius: 15px;
     padding:20px;
     text-align: center;
+    box-shadow: 5px 5px rgb(138, 138, 221) ;
 }
 
 .container h2{
     margin-bottom: 20px;
-
+    color: rgb(59, 59, 165);
 }
 
 .input input[type='text']{
@@ -48,6 +49,9 @@ body{
     border-radius: 10px;
     cursor: pointer;
 }
+.input input[type="button"]:hover{
+    box-shadow: 3px 3px rgb(187, 187, 228);
+}
 
 .tasks{
     margin-top: 50px;
@@ -65,6 +69,10 @@ body{
     border-radius: 10px;
     border: 1px solid blue;
     margin:20px 0;
+    background-color: aqua;
+}
+.task:hover{
+    box-shadow: 0 0 5px 5px rgb(80, 204, 209);
 }
 .task span{
     display: block;
@@ -90,4 +98,7 @@ body{
 .task img{
     width: 20px;
     height: 20px;
+}
+.task img:hover{
+    transform: scale(1.2);
 }

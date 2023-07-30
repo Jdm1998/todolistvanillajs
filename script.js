@@ -12,9 +12,12 @@ addButton.addEventListener("click",function (params) {
         alert("enter something")
     }
 
-    input.value ="";
-console.log(taskinput);
+    else{
 
+        
+        input.value ="";
+        console.log(taskinput);
+        
 let newtask = document.createTextNode( `${taskinput}`);
 let newtaskspan = document.createElement("span");
 let newtaskdiv =document.createElement("div");
@@ -30,6 +33,7 @@ newtaskdiv.appendChild(checkboxElement);
 newtaskdiv.appendChild(newtaskspan);
 newtaskdiv.appendChild(delelement);
 tasksElement.appendChild(newtaskdiv);
+}
 
 })
 
